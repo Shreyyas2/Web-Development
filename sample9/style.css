@@ -1,0 +1,19 @@
+.red{
+    color: red;
+}
+
+.black{
+    color: rgb(0, 3, 5);
+}
+
+.white{
+    color: rgb(241, 241, 233);
+}
+
+#firstdiv{
+    background-color: rgb(228, 34, 34);
+}
+
+#seconddiv{
+    /* background-color: rgb(228, 34, 34); */
+}
