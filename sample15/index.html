@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        p:first-child {
+            background-color: aqua;
+        }
+
+        .two {
+            background-color: rgb(228, 213, 6);
+        }
+
+        div>article {
+            background-color: rgb(236, 109, 4);
+        }
+
+        #chardaPunjab {
+            background-color: brown;
+        }
+
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: aquamarine;
+        }
+
+        a:hover {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="one">
+        <p>Amritsar</p>
+        <p>ludhiana</p>
+    </main>
+    <div class="two">
+        Chandigarh
+        <article>
+            Rehnak Bazar
+        </article>
+    </div>
+    <div id="chardaPunjab">
+        Mohali, Punjab
+    </div>
+    <a target="_blank" href="https://www.google.com/about/careers/applications/jobs/results#!t=jo&jid=127025001&">This</a>
+    <a target="_blank" href="https://apply.careers.microsoft.com/careers?gad_source=1&gad_campaignid=23181843244&gbraid=0AAAABBkmahmQ0Z3IrI5BX_4FQqnccn6yy&gclid=CjwKCAiA1obMBhAbEiwAsUBbIvcLuw78xaSaG38_Qx5y7KxrJ1bjBBWIBI9AoJ__NtkA424HBqZfuRoCo68QAvD_BwE&start=0&location=India%2C++Multiple+Locations%2C++Multiple+Locations&sort_by=distance&filter_include_remote=1&filter_career_discipline=Critical+Environment+Ops%2CData+Center+Operations+Management%2CData+Center+Technicians%2CMaterials+Handling&filter_profession=data+center%2Csupply+chain">Or
+        This</a>
+</body>
+
+</html>
