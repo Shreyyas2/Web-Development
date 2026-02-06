@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <!-- THIS WILL BE MY GREATEST WEBSITE FOREVER. -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@200..900&display=swap');
+        *{
+            margin: 10;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            height: 40vh;
+            margin: auto;
+            text-align: center;
+            font-size: 80px;
+            font-family: "Unbounded", sans-serif;
+            font-weight: 700;
+            background-color: #ad3233;
+            color: #f8f2bf;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            width: 80vw;
+            min-height: 40vh; /* min ht is set, no limit for max */
+            margin: 23px auto;
+            text-align: center;
+            font-size: 20px;
+            font-family: "Bona Nova SC", serif;
+            font-weight: 500;
+            background-color: #FFD700;
+        }
+        .container > div{
+            margin: 10px auto;
+            width: 80vw;
+            min-height: 40vh;
+            text-align: center;
+            font-size: 80px;
+            font-family: "Bona Nova SC", serif;
+            font-weight: 500;
+        }
+        .RB{
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 10px auto;
+            width: 80vw;
+            min-height: auto;
+            text-align: center;
+            font-size: 60px;
+            background-color: #D9D9D9;
+            font-family: "BBH Bartle", sans-serif;
+            font-weight: 400;
+          }
+          .DarbarSahib{
+            margin: 20px auto;
+            text-align: center;
+            border:  solid black;
+          }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        Apna PUNJAB
+    </div>
+
+    <div class="container">
+        CHANDIGARH
+        AMRITSAR
+        LUDHIANA
+        <div>
+            Jalandhar
+        </div>
+    </div>
+    <div class="RB">
+        California
+    </div>
+    <div class="DarbarSahib">
+        <img src="PUNJAB.jfif" alt="" >
+    </div>
+</body>
+</html>
