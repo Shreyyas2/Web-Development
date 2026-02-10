@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body{
+            background-color: #9B1C31;
+        }
+        @media screen and (orientation: portrait){
+            body{
+                border: 9px solid #FFD700;
+            }
+        }
+        @media screen and (max-width: 222px){
+            body{
+                background-color: #FFD700;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        .text{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: aquamarine;
+        }
+        }
+        .boxes{
+            display: flex;
+        }
+        .box{
+            width: 212px;
+            height: 212px;
+            background-color: aqua;
+            padding: 2px;
+            margin: 2px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="text">
+        <div>PUNJABI AAGYE OYE</div>
+    </div>
+    <div class="boxes">
+        <div class="box">AMRITSAR</div>
+        <div class="box">MOHOLI, CHANDIGARH</div>
+        <div class="box">CALIFORNIA</div>
+    </div>
+</body>
+</html>
