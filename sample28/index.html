@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Float & Clear</title>
+    <style>
+        .cards{
+            border: 2px solid #FFD700;
+            display: flow-root;
+        }
+        .card{
+            border: 2px solid #9B1C31;
+        }
+        img{
+            float: right;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="cards">
+        <img src="https://www.beautyofindia.in/wp-content/uploads/2018/01/golden_temple-sh.jpg" alt="" width="230" >
+        <div class="card">card 1</div>
+        <div class="card">Punjabi culture is a vibrant, ancient, and resilient blend of traditions from the Punjab region (India/Pakistan), characterized by high-energy dance (Bhangra/Giddha), soul-stirring music, rich, hearty cuisine, and deep hospitality. Rooted in agriculture, it celebrates life through festivals like Lohri and Baisakhi. Key elements include the Punjabi language,, colorful attire (salwar-kameez/turban), and a strong community spirit. </div>
+        <div class="card">card 3</div>
+    </div>
 </body>
 </html>

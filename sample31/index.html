@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Box</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Unbounded:wght@200..900&display=swap');
+
+        .container{
+            padding: 10px;
+            border: 20px solid #FFD700;
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            /* OR flex-direction: column; */
+            /* flex-wrap: wrap; */
+            /* align-content: flex-start;
+            /* there is no justify-items  in flexbox; */
+            /* flex-flow: row wrap; */
+            /* row-gap: 40px;
+            column-gap: 10px; */
+            gap: 40px 10px;
+            /* instead of writing row&column gap sep. the above syntax can be written */
+        }
+        .item{
+            display: flex;
+            height: 200px;
+            width: 400px;
+            border: 0.5px solid black;
+            margin: 4px;
+            background-color: #AB2330;
+            color: aliceblue;
+            justify-content: center;
+            align-items: center;
+            font-family: "Unbounded", sans-serif;
+            font-optical-sizing: auto; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item">CHANDIGARH</div>
+            <div class="item">AMRITSAR</div>
+            <div class="item">MOHOLI</div>
+            <div class="item">REHNAK BAZAR</div>
+            <div class="item">LUDHIANA</div>
+        </div>
+    </main>
+</body>
+</html>
