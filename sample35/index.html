@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Property</title>
+    <style>
+        .container{
+            background-color: #FFD700;
+            width: 111vh;
+            height: 20vw;
+            position: absolute;
+        }
+        .box{
+            margin: 30px;
+            background-color: #BA1E23;
+            width: 11vh;
+            height: 5vw;
+            animation-name: Cali;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0.2s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse; /* this allows animation to play back&fourth */
+            /* OR 
+            animation: Cali 2s ease-in-out 0.2s infinite alternate-reverse; */
+
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        }
+        @keyframes Cali{
+            from{
+                background-color: #BA1E23; /* you can skip this line, as by default background color will be red */
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: aliceblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">PUNJAB</div>
+    </div>
+</body>
+</html>
