@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question</title>
+    <style>
+        .container{
+            margin-top: 130px;
+            margin-left: 330px;
+            width: 110vh;
+            height: 20vw;
+            border: 5px solid #FFD700;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .ball{
+            margin-top: 15.55vw;
+            width: 60px;
+            height: 60px;
+            background-color: #BA1E23;
+            border-radius: 60px;
+            position: absolute;
+            animation: ballin1 3s linear infinite alternate, ballin2 1s linear infinite alternate-reverse;
+        }
+        @keyframes ballin1 {
+            from { left: 0%; }
+            to { left: calc(100% - 60px);
+            }
+        }
+        @keyframes ballin2 {
+            from { bottom: 0%; }
+            to { bottom: calc(100% - 60px);
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
