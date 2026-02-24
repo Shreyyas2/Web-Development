@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    width: 20vh;
+}
+.bg{
+    filter: brightness(70%);
+}
+.nav {
+    position: relative; 
+    width: 100%;
+    height: 100vh; /* Sets it to full screen height */
+}
+.navv{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: rgb(252, 249, 249);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-top: 10px;
+    gap: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title{
+    position: absolute;
+    /* Move it down so it's not overlapping the navbar */
+    top: 150px; 
+    left: 40px; 
+
+    /* MATCHING SIZE TO LOGO */
+    width: 120px; /* Adjust this until it looks identical in size to 'Netflix' */
+    
+    /* Ensure it stays crisp */
+    height: auto; 
+    z-index: 5;
+}
