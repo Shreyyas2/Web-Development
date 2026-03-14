@@ -7,6 +7,7 @@
 }
 .bg{
     filter: brightness(70%);
+    filter: blur(0.6px);
 }
 .nav {
     position: relative; 
@@ -36,8 +37,9 @@ img{
 .title{
     position: absolute;
     /* Move it down so it's not overlapping the navbar */
-    top: 150px; 
+    top: 250px; 
     left: 40px; 
+    box-shadow: 10px solid black;
 
     /* MATCHING SIZE TO LOGO */
     width: 120px; /* Adjust this until it looks identical in size to 'Netflix' */
